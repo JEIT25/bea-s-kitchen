@@ -36,7 +36,7 @@ function addFilePath(number,navArray) {
     })
     if(number===1) navArray
     [number].addEventListener("click",() => {
-        window.location = "dishes.html"
+        window.location = "index.html"
     })
     if(number===2) navArray[number].addEventListener("click",() => {
         window.location = "about.html"
