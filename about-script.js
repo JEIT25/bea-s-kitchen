@@ -18,7 +18,7 @@ function addFilePath(number,navArray) {
         window.location = "about.html"
     })
     if(number===3) navArray[number].addEventListener("click",() => {
-        window.location = "log-in-page.html"
+        window.location = "log-in.html"
     })
 }
 
