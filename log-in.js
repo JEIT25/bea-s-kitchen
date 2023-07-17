@@ -8,7 +8,7 @@ function addNavLink (navArray) {
 
 function addFilePath(number,navArray) {
     if(number===0) navArray[number].addEventListener("click",() => {
-        window.location = "index.html"
+        window.location = "home.html"
     })
     if(number===1) navArray
     [number].addEventListener("click",() => {
@@ -18,7 +18,7 @@ function addFilePath(number,navArray) {
         window.location = "about.html"
     })
     if(number===3) navArray[number].addEventListener("click",() => {
-        window.location = "log-in-page.html"
+        window.location = "log-in.html"
     })
 }
 
