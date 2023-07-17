@@ -32,11 +32,11 @@ function addNavLink (navArray) {
 
 function addFilePath(number,navArray) {
     if(number===0) navArray[number].addEventListener("click",() => {
-        window.location = "home.html"
+        window.location = "index.html"window.location = "home.html"
     })
     if(number===1) navArray
     [number].addEventListener("click",() => {
-        window.location = "index.html"
+        window.location = "dishes.html"
     })
     if(number===2) navArray[number].addEventListener("click",() => {
         window.location = "about.html"
