@@ -1,0 +1,280 @@
+body {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+    .container {
+        display: flex;
+    }
+    
+    /* Navigation Bar Codes */
+    .nav {
+        display: flex;
+        position: fixed;
+        z-index: 2;
+        justify-content: space-evenly;
+        align-items: center;
+        letter-spacing: 0.1rem;
+        background: white;
+        padding-top: 0.7rem;
+        width: 100%;
+        top: 0;
+    }
+    
+    .nav-item {
+        padding: 1.2rem 1rem;
+        font-weight: 400;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        min-width: 10%;
+        border-radius: 4px;
+    }
+    
+    .nav-item:hover {
+        font-weight: 700;
+        background-color: black;
+        color: white;
+    }
+    
+    /* Main content Codes */
+    .headers {
+        margin-top: 0.5rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sliders-wrap {
+        overflow: hidden;
+    }
+    
+    .active {
+        margin-left: -100%;
+    }
+    
+    .sliders-wrap img {
+        /* max-width: 100%; for smaller scrensize */
+        align-self: center;
+        min-width: 100%;
+        height: 45rem;
+        object-fit: cover;
+        object-position: center;
+        transition: all 1.4s ease-in-out;
+    }
+
+    .navigation-arrow {
+        position: absolute;
+        width: 2rem;
+        min-height: 2rem;
+        top: 25rem;
+        cursor: pointer;
+    }
+    
+    .left-arrow {
+        align-self: flex-start;
+        left: 1rem;
+    }
+    
+    .right-arrow {
+        align-self: flex-end;
+        right: 1rem;
+    }
+    
+    .text-heading {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 0.7rem 1rem;
+        /* height: 16rem; */
+        /* left: 50%; for breakpoint mobile add later*/
+    }
+    
+    
+    .text-heading h1 {
+        font-size: 2.2rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    .text-heading p  {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    .text-heading img {
+        max-height: 3rem;
+    }
+    
+    .text-heading div {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 0.1rem;
+    }
+    
+    .text-heading .col-1 , .col-2 {
+        border: 4px solid black;
+        min-width: 100%;
+        text-align: center;
+        min-height: 8rem;
+    }
+    
+    .col-1 h1 {
+        font-size: 4rem;
+    }
+    
+    h1 .amora {
+        font-style: italic;
+    }
+    
+    .text-heading .col-2 {
+        border-top: none;
+        min-height: 3.5rem;
+    }
+    
+    /* Additional Content - Recommendations Section */
+
+h2 {
+    letter-spacing: 0.7rem;
+    margin-top: 5rem;
+    font-weight: 200;
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+}
+
+.additional-content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.special-recommendations {
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 100%;
+}
+
+.special-recommendations div {
+    flex-direction: column;
+    align-items:center;
+    font-size: 1rem;
+    margin-top: 1rem;
+    object-fit: contain;
+
+}
+
+.special-recommendations .title {
+    font-size: 1.3rem;
+}
+
+.additional-content .price {
+    font-weight: 400;
+}
+
+.special-recommendations div img {
+    width: 90%;
+    border-radius: 1%;
+    max-height: 20rem;
+}
+
+.footer {
+    margin-top: 4.5rem;
+    margin-bottom: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+}
+
+
+
+
+/* Media Queries BreakPoints */
+
+/* Small Size */
+@media (max-width: 600px) {
+
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-item {
+        font-size: 0.9rem;
+    }
+
+    .user-action,.cart {
+        font-size: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .cart {
+        margin-left: 0.5rem;
+    }
+
+    .text-heading {
+        max-height: 90%;
+        border-radius: 0.4rem;
+    }
+
+    .navigation-arrow {
+        display: none;
+    }
+
+    .text-heading  p {
+        font-size: 0.9rem;
+    }
+
+
+    .text-heading .col-1 h1 {
+        font-size: 3rem;
+    }
+
+    .text-heading .col-1 {
+        border: 2px solid black;
+        border-bottom: none;
+        max-height: 1rem;
+    }
+
+    .text-heading .col-2 {
+        min-height: 2rem;
+        border: 2px solid black;
+    }
+
+    .additional-content h2 {
+        font-size: 1.6rem;
+        color: black;
+        font-weight: bold;
+        letter-spacing: 0;    
+        letter-spacing: 2px;
+    }
+
+    .special-recommendations {
+        flex-direction: column;
+    }
+
+    .special-recommendations div {
+        margin-bottom: 5rem;
+    }
+
+    .special-recommendations .last {
+        margin-bottom: 0;
+    }
+
+    .special-recommendations .title {
+        font-size: 1.5rem;
+    }
+
+    .special-recommendations .price {
+        font-size: 1.4rem;
+    }
+    .footer {
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+}
+
